@@ -6,7 +6,7 @@
 /*   By: jvaquer <jvaquer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:23:22 by jvaquer           #+#    #+#             */
-/*   Updated: 2019/10/18 12:23:36 by jvaquer          ###   ########.fr       */
+/*   Updated: 2019/10/30 16:21:17 by jvaquer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	ft_strlen(const char *str)
 	return (count);
 }
 
-char    *ft_strcpy(char *dest, const char *src)
+char    *ft_strcpy(char *dest, char *src)
 {
     unsigned int i;
 
@@ -69,7 +69,7 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if (c == '\0')
 		return ((char*)s);
-	return (0);
+	return (NULL);
 }
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
@@ -93,3 +93,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	return (string);
 }
+

@@ -6,7 +6,7 @@
 /*   By: jvaquer <jvaquer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 14:07:52 by jvaquer           #+#    #+#             */
-/*   Updated: 2019/10/18 12:23:53 by jvaquer          ###   ########.fr       */
+/*   Updated: 2019/10/30 16:19:40 by jvaquer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,13 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-# define BUFF_SIZE 32
+#define MAX 1024
+
+#define BUFFER_SIZE 32
 
 int		        get_next_line(int fd, char **line);
 size_t	        ft_strlen(const char *str);
-char            *ft_strcpy(char *dest, const char *src);
+char            *ft_strcpy(char *dest, char *src);
 char	        *ft_strjoin(char *s1, char *s2, size_t len);
 char	        *ft_substr(char const *s, unsigned int start, size_t len);
 char	        *ft_strchr(const char *s, int c);
